@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acme Corp - Innovative Solutions</title>
+  <link rel="stylesheet" href="company.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Acme Corp</h1>
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Innovative Solutions for Your Business</h2>
+      <p>Empowering your growth with cutting-edge technology and expert consulting.</p>
+      <a href="#services" class="btn-primary">Explore Our Services</a>
+    </div>
+  </section>
+
+  <main>
+    <section id="about" class="about container">
+      <h2>About Us</h2>
+      <p>At Acme Corp, we specialize in delivering tailored software solutions that drive success. Our team of experts is dedicated to innovation and excellence.</p>
+    </section>
+    <br><br><br>
+    <section id="services" class="services container">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <article class="service-item">
+          <img src="img/comp1.jpg" alt="Consulting Icon" />
+          <h3>Consulting</h3>
+          <p>Expert advice to optimize your business processes and technology stack.</p>
+        </article>
+        <article class="service-item">
+          <img src="img/comp2.jpg" alt="Development Icon" />
+          <h3>Software Development</h3>
+          <p>Custom software solutions built to meet your unique business needs.</p>
+        </article>
+        <article class="service-item">
+          <img src="img/comp3.jpg" alt="Support Icon" />
+          <h3>Support & Maintenance</h3>
+          <p>Reliable support to keep your systems running smoothly 24/7.</p>
+        </article>
+      </div>
+    </section>
+    <br><br><br>
+
+    <section id="team" class="team container">
+      <h2>Meet the Team</h2>
+      <div class="team-grid">
+        <article class="team-member">
+          <img src="img/comp4.jpg" alt="Jane Doe" />
+          <h3>Jane Doe</h3>
+          <p>CEO & Founder</p>
+        </article>
+        <article class="team-member">
+          <img src="img/comp6.jpg" alt="John Smith" />
+          <h3>John Smith</h3>
+          <p>Lead Developer</p>
+        </article>
+        <article class="team-member">
+          <img src="img/comp5.jpg" alt="Emily Johnson" />
+          <h3>Emily Johnson</h3>
+          <p>Project Manager</p>
+        </article>
+      </div>
+    </section>
+    <br><br><br>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2024 Acme Corp. All rights reserved.</p>
+      <nav aria-label="Footer Navigation">
+        <ul>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms of Service</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // Simple toggle for mobile menu
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav ul');
+
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
